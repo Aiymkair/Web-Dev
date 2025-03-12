@@ -16,6 +16,8 @@ export class AlbumsComponent {
   albums: AlbumModel[] = albumsDATA;
   selectedID?: number;
 
+
+  
   constructor(private route: Router) {}
   goToAlbumPhotos(albumId: number) {
     this.route.navigate(["albumPhotos", albumId]);
